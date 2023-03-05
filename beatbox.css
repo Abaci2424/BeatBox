@@ -14,8 +14,6 @@ body {
 
 #instrument {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   align-items: end;
   align-content: center;
   margin: 45px auto;
@@ -23,6 +21,22 @@ body {
    width: 385px;
   
 }
+
+.twoOnTwo {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.threeOnThree {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.fourOnFour {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
 
 .box {
   width: 90px;
@@ -265,6 +279,11 @@ body {
 
 #btn16{
   border: 3px solid #d71b8c;
+}
+
+#select-table {
+  margin: 45px auto;
+  display: flex;
 }
 
 
