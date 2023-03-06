@@ -1,7 +1,7 @@
 h1 {
   color: #eee;
-  font-size: 3rem;
-  font-family: Oswald;
+  font-size: 4rem;
+  font-family: fantasy;
   letter-spacing: 7px;
   text-align: center;
 }
@@ -12,39 +12,66 @@ body {
   color: white;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+
+select {
+  width: 140px;
+  height: 35px;
+  padding: 4px;
+  border-radius:4px;
+  text-align: center;
+  background: #eee;
+  border: none;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  }
+ 
+
 #instrument {
   display: grid;
   align-items: end;
   align-content: center;
   margin: 45px auto;
-   height: 385px;
-   width: 385px;
-  
 }
 
 .twoOnTwo {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  height: 260px;
+  width: 260px;
 }
 
 .threeOnThree {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  height: 385px;
+  width: 385px;
 }
 
 .fourOnFour {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  height: 385px;
+  width: 385px;
 }
 
 
 .box {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   margin-left: 10px;
   margin-top: 10px;
   border-radius: 25px;
-  
 }
 
 #btn1.btn-play, #btn1:hover {
@@ -290,9 +317,8 @@ body {
 .btn-group {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 60px;
-  padding: 20px 30px;
   width: 100%;
 }
 
@@ -306,7 +332,7 @@ body {
 }
 
 .btn {
-  padding: 10px 15px;
+  padding: 10px 20px;
   border-radius: 16px;
   border: 2px solid #4a9cd3 ;
 }
